@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wxucuha67vmt"
-path="res://.godot/imported/tripleT-state4.png-0b86e5170840caa7a319e6703d585d44.ctex"
+uid="uid://br520k3jwie7a"
+path="res://.godot/imported/tripleT-state3.png-8cf0ec11a979d516660a43680141f568.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tripleT-state4.png"
-dest_files=["res://.godot/imported/tripleT-state4.png-0b86e5170840caa7a319e6703d585d44.ctex"]
+source_file="res://tt/tripleT-state3.png"
+dest_files=["res://.godot/imported/tripleT-state3.png-8cf0ec11a979d516660a43680141f568.ctex"]
 
 [params]
 

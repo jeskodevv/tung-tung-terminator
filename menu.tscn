@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://dsik7gcwjcdh6"]
+
+[ext_resource type="Script" uid="uid://d16sd6mdh1qn7" path="res://menu.gd" id="1_ouk20"]
+[ext_resource type="Texture2D" uid="uid://kap7d2jdbb0g" path="res://skyblue-bg.jpg" id="2_mae5d"]
+
+[node name="Control" type="Control" unique_id=524933619]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("1_ouk20")
+
+[node name="SkyblueBg" type="Sprite2D" parent="." unique_id=1131363546]
+position = Vector2(308, 516)
+texture = ExtResource("2_mae5d")
+
+[node name="play" type="Button" parent="." unique_id=133974860]
+layout_mode = 0
+offset_left = 388.0
+offset_top = 242.0
+offset_right = 759.0
+offset_bottom = 301.0
+mouse_filter = 1
+text = "PLAY"
+icon_alignment = 1
+
+[node name="Label" type="Label" parent="." unique_id=1863984519]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 320.0
+offset_right = 1151.0
+offset_bottom = 647.0
+size_flags_horizontal = 4
+text = "
+
+CONTROLS
+Player 1                                             Player 2
+  A/D/W - left/right/jump                     Arrow Keys - move      
+               S - slam hit                          Up + Down - launch bomb
+
+
+
+"
+horizontal_alignment = 1

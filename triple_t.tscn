@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cx5bcul0o77ck"]
+
+[ext_resource type="Script" uid="uid://b4xlekj4b831c" path="res://triple_t.gd" id="1_7ousq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_km1x3"]
+load_path = "res://.godot/imported/tripleT-state1.png-2297a67cd3947f12b2bf2a1fe4e8c79e.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4kxuq"]
+size = Vector2(33.5, 109.5)
+
+[node name="tripleT" type="CharacterBody2D" unique_id=1702910488]
+script = ExtResource("1_7ousq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=572958515]
+position = Vector2(74.00001, 511)
+scale = Vector2(0.4891393, 0.42141962)
+texture = SubResource("CompressedTexture2D_km1x3")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1017734712]
+position = Vector2(64.25, 510.75)
+shape = SubResource("RectangleShape2D_4kxuq")

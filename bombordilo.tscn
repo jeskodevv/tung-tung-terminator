@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://b0a55ldnwikik"]
+
+[ext_resource type="Script" uid="uid://dbx7owprkv088" path="res://bombordilo.gd" id="1_pgf41"]
+[ext_resource type="Texture2D" uid="uid://e7ba8lqupctj" path="res://bombardilo.png" id="2_4iomr"]
+[ext_resource type="Script" uid="uid://dxq0esg561bq" path="res://bomb.gd" id="3_q3ghk"]
+[ext_resource type="Texture2D" uid="uid://dh3upxnrnjf1x" path="res://bomb.png" id="4_6fvx8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mti6b"]
+size = Vector2(134.25, 57)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4iomr"]
+radius = 4.025955
+height = 22.0896
+
+[node name="bombordilo" type="CharacterBody2D" unique_id=13711856]
+script = ExtResource("1_pgf41")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=591938089]
+position = Vector2(1084, 302)
+scale = Vector2(0.13330075, 0.13330075)
+texture = ExtResource("2_4iomr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=513587026]
+position = Vector2(1084.125, 299.5)
+shape = SubResource("RectangleShape2D_mti6b")
+
+[node name="Bomb" type="Area2D" parent="." unique_id=1788033665]
+script = ExtResource("3_q3ghk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Bomb" unique_id=779523319]
+position = Vector2(1082, 341)
+scale = Vector2(0.09547233, 0.09547236)
+texture = ExtResource("4_6fvx8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bomb" unique_id=2092013950]
+position = Vector2(1080, 340)
+rotation = -1.4698515
+shape = SubResource("CapsuleShape2D_4iomr")

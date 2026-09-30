@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cx5bcul0o77ck" path="res://triple_t.tscn" id="2_1bvp3"]
 [ext_resource type="Texture2D" uid="uid://cttr8ook2h6r1" path="res://grass.png" id="2_lquwl"]
 [ext_resource type="PackedScene" uid="uid://b0a55ldnwikik" path="res://bombordilo.tscn" id="3_lquwl"]
+[ext_resource type="PackedScene" uid="uid://5l3gtv6auwwu" path="res://bomb.tscn" id="5_lquwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
 texture = ExtResource("2_lquwl")
@@ -54,3 +55,5 @@ shape = SubResource("RectangleShape2D_1bvp3")
 position = Vector2(1313, 329)
 scale = Vector2(0.26592064, -55.102238)
 shape = SubResource("RectangleShape2D_1bvp3")
+
+[node name="bomb" parent="." unique_id=1788033665 instance=ExtResource("5_lquwl")]
